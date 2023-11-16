@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'Palatino Linotype';
+    src: url('../../fonts/Palatino Linotype/palatinolinotype_bold.ttf');
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../../fonts/AvenirNextCyr/AvenirNextCyr-Demi.ttf');
+}
+
+
+html {
+    position: relative;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;    
+}
+
+svg {
+    height: 100%;
+    width: 100%;
+}
+
+.body {
+    color: #382F24;
+    font-size: 32px;
+    background: linear-gradient(0deg, #B488F7 -13.28%, #F2EDE7 22.41%, #F2EDE7 85.36%, #B488F7 108.74%), #F2EDE7;
+}
+
+button {
+    cursor: pointer;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+h1, h2, h3, h4, h5, h6, span{
+    margin: 0 auto;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Avenir Next Cyr';
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+h3, p {
+    font-size: 24px;
+}
+
+a {
+    text-decoration: none;
+}
+
+fieldset {
+    border: none;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Rufina:wght@700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1377px;
+    margin: 0 auto;
+}
+
+ul li {
+    list-style: none;
+    font-size: 1.2em; 
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+button {
+    cursor: pointer;
+} */

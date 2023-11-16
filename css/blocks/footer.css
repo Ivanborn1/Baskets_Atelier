@@ -1,0 +1,11 @@
+.footer {
+    background-color: #D8B897;
+    margin-top: 150px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    /* padding-top: 30px;
+    padding-bottom: 30px; */
+    font-family: 'Palatino Linotype';
+    font-style: bold;
+    font-size: 0.625em;
+}
