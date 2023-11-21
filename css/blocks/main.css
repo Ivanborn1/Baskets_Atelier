@@ -3,12 +3,9 @@
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    margin-bottom: 80px;
-}
-
-.container__main {
-    max-width: 1410px;
-    margin: 0 auto;
+    padding-bottom: 50px;
+    padding-bottom: 60px;
+    font-family: 'Avenir Next Cyr';
 }
 
 .banner__title {
@@ -27,7 +24,6 @@
 }
 
 .banner__description {
-    font-family: 'Palatino Linotype';
     font-size: 32px;
     font-style: italic;
     align-items:stretch;
@@ -37,46 +33,50 @@
     width: 365px;
     height: 70px;
     border-radius: 20px;
-    background: radial-gradient(94.93% 75.71% at 50% 50%, rgba(242, 237, 231, 0.00) 0%, #B488F7 100%);
+    font-size: 20px;
+    background: radial-gradient(99.28% 108.44% at 49.88% 45.37%, rgba(180, 136, 247, 0.50) 18.73%, rgba(242, 237, 231, 0.00) 100%);
     border: none
 }
 
 .cards {
-    /* display: flex; */
+    font-family: 'Avenir Next Cyr';
     margin-bottom: 60px;
+}
+
+.cards__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 .cards__items {
     display: flex;
+    justify-content: center;
     align-content: center;
-    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 67px;
+    gap: 10px;
 }
 
 .item__image {
-    width: 384px;
-    height: 383px;
-    flex-shrink: 0;
     margin-bottom: 6px;
 }
 
 .item__image-pic {
     border-radius: 20px;
-    width: 384px;
-    height: 383px;
+    width: 304px;
+    height: 304px;
     flex-shrink: 0;
 }
 
 
 .cards__item {
-    width: 425px;
-    height: 560px;
+    width: 345px;
+    height: 480px;
     padding: 20px;
     border-radius: 30px;
     background: radial-gradient(99.28% 108.44% at 49.88% 45.37%, #B488F7 18.73%, rgba(242, 237, 231, 0.00) 100%);
 }
-
+  
 .item__reviews {
     margin: 0;
     margin-top: 5px;
@@ -93,8 +93,8 @@
 }
 
 .item__like {
-    width: 65px;
-    height: 65px;
+    width: 60px;
+    height: 60px;
     border-radius: 50px;
     border: none;
     background-color: #F2EDE7;
@@ -107,7 +107,7 @@
 .item__stock {
     margin: 0px;
     margin-left: 35px;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .cards__other {
@@ -121,9 +121,14 @@
     padding-left: 60px;
     padding-right: 60px;
     border: none;
-    float: right;
     background: radial-gradient(99.28% 108.44% at 49.88% 45.37%, rgba(180, 136, 247, 0.50) 18.73%, rgba(242, 237, 231, 0.00) 100%);
 }
+
+
+.cards__item:hover, .banner__button:hover, .cards__other:hover {
+    background: radial-gradient(99.28% 108.44% at 49.88% 50%, #bc98f6 18.73%, rgba(242, 237, 231, 0.00) 100%);
+}
+
 
 /* @media screen and (max-width: 1535px) {
     .banner {

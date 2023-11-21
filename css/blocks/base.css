@@ -25,7 +25,7 @@ svg {
 
 .body {
     color: #382F24;
-    font-size: 32px;
+    font-size: 18px;
     background: linear-gradient(0deg, #B488F7 -13.28%, #F2EDE7 22.41%, #F2EDE7 85.36%, #B488F7 108.74%), #F2EDE7;
 }
 
@@ -38,8 +38,8 @@ ul li {
 }
 
 ul {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6, span{
@@ -52,7 +52,7 @@ h2, h3, h4, h5, h6 {
 
 h2 {
     font-size: 32px;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 h3, p {
@@ -68,40 +68,6 @@ fieldset {
 }
 
 .container {
-    max-width: 1600px;
+    max-width: 1410px;
     margin: 0 auto;
 }
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Rufina:wght@700&display=swap');
-
-body {
-    font-family: 'Poppins', sans-serif;
-}
-
-.container {
-    max-width: 1377px;
-    margin: 0 auto;
-}
-
-ul li {
-    list-style: none;
-    font-size: 1.2em; 
-}
-
-
-
-a {
-    text-decoration: none;
-}
-
-h1 {
-    font-size: 4rem;
-}
-
-p {
-    font-family: 'Poppins', sans-serif;
-
-}
-
-button {
-    cursor: pointer;
-} */
