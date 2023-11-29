@@ -18,19 +18,19 @@ html {
     box-sizing: inherit;    
 }
 
-svg {
-    height: 100%;
-    width: 100%;
-}
-
 .body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
     color: #382F24;
     font-size: 18px;
     background: linear-gradient(0deg, #B488F7 -13.28%, #F2EDE7 22.41%, #F2EDE7 85.36%, #B488F7 108.74%), #F2EDE7;
+    outline: none;
 }
 
-button {
+button, a, input {
     cursor: pointer;
+    /* outline: none; */
 }
 
 ul li {
@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, h6, span{
     margin: 0 auto;
 }
 
-h2, h3, h4, h5, h6 {
+h2, h3{
     font-family: 'Avenir Next Cyr';
 }
 
@@ -62,6 +62,15 @@ h3, p {
 a {
     text-decoration: none;
 }
+
+/* a.text {
+    text-decoration: none;
+}
+
+a.text:hover, a.text:active {
+    text-decoration: underline;
+    color: #382F24;
+} */
 
 fieldset {
     border: none;

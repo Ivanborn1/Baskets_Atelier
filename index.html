@@ -11,46 +11,63 @@
     <header class="header">
         <div class="container header__container">
             <div class="header__logo">
-                <img src="img/logo.svg" alt="логотип" class="header__logo-pic">
-            </div>
+                <svg class="svg__icon svg__logo">
+                    <use xlink:href="img/svgs/logo.svg#logo"></use>
+                </svg>            </div>
             <div class="header__middle">
                 <form action="" class="middle__search">
-                    <input type="text" placeholder="Поиск" class="middle__search-input">
-                    <button type="submit" class="middle__search-button"><svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 -5 24 30" width="35" height="35"><path d="M23.707,22.293l-5.969-5.969a10.016,10.016,0,1,0-1.414,1.414l5.969,5.969a1,1,0,0,0,1.414-1.414ZM10,18a8,8,0,1,1,8-8A8.009,8.009,0,0,1,10,18Z"/></svg></button>
+                    <input type="text" placeholder="Поиск" class="search__input">
+                    <button type="submit" class="search__button">
+                        <svg class="svg__icon svg__search">
+                            <use xlink:href="img/svgs/search.svg#search"></use>
+                        </svg>
+                    </button>
                 </form>
                 <nav class="header__nav">
                     <ul class="header__nav-list">
                         <li class="header__nav-item">
-                            <!-- <a href="" class="header__nav-link"> -->
+                            <a href="" class="header__nav-link">
                                 Товары
-                            <!-- </a> -->
+                            </a>
                         </li>
                         <li class="header__nav-item">
-                            <!-- <a href="" class="header__nav-link"> -->
+                            <a href="" class="header__nav-link">
                                 Помощь
-                            <!-- </a> -->
+                            </a>
                         </li>
                         <li class="header__nav-item">
-                            <!-- <a href="" class="header__nav-link"> -->
+                            <a href="" class="header__nav-link">
                                 О нас
-                            <!-- </a> -->
+                            </a>
                         </li>
                     </ul>
                 </nav>
             </div>
             <div class="header__tools">
-                <div class="tools__profile">
-                    <p class="profile__name">Гость</p>
-                    <div class="tools__profile__icon"><!--  Поменять класс  -->
-                        <img src="img/Профиль.svg" alt="профиль" class="tools__profile__icon-pic">
-                    </div>
-                </div>
-                <div class="tools__profile__icon"><!--  Поменять класс  -->
-                    <img src="img/Профиль.svg" alt="профиль" class="tools__profile__icon-pic">
-                </div>
-                <div class="tools__profile__icon"><!--  Поменять класс  -->
-                    <img src="img/Профиль.svg" alt="профиль" class="tools__profile__icon-pic">
-                </div>
+                <p class="profile__name">Гость</p>
+                <ul class="tools__items">
+                    <li class="tools__item">
+                        <button class="tools__item-button">
+                            <svg class="svg__icon svg__profile">
+                                <use xlink:href="img/svgs/search.svg#search"></use>
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="tools__item">
+                        <button class="tools__item-button">
+                            <svg class="svg__icon svg__profile">
+                                <use xlink:href="img/svgs/search.svg#search"></use>
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="tools__item">
+                        <button class="tools__item-button">
+                            <svg class="svg__icon svg__profile">
+                                <use xlink:href="img/svgs/search.svg#search"></use>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
@@ -83,56 +100,10 @@
                             <div class="item__bottom">
                                 <p class="item__price">5100 ₽</p>
                                 <p class="item__stock">В наличии</p>
-                                <button class="item__like">
-                                    <svg class="like__icon">
-                                        <use href="img/heart.svg"></use>
-                                    </svg>                            </button>
-                            </div>
-                        </div>
-                        <div class="cards__item">
-                            <div class="item__image">
-                                <img src="img\example.jpeg" alt="card" class="item__image-pic">
-                            </div>
-                            <h3 class="item__title">Корзина-сумка</h3>
-                            <p class="item__reviews">14 отзывов</p>
-                            <div class="item__bottom">
-                                <p class="item__price">5100 ₽</p>
-                                <p class="item__stock">В наличии</p>
-                                <button class="item__like">
-                                    <svg class="like__icon">
-                                        <use href="img/heart.svg"></use>
-                                    </svg>                            </button>
-                            </div>
-                        </div>
-                        <div class="cards__item">
-                            <div class="item__image">
-                                <img src="img\example.jpeg" alt="card" class="item__image-pic">
-                            </div>
-                            <h3 class="item__title">Корзина-сумка</h3>
-                            <p class="item__reviews">14 отзывов</p>
-                            <div class="item__bottom">
-                                <p class="item__price">5100 ₽</p>
-                                <p class="item__stock">В наличии</p>
-                                <button class="item__like">
-                                    <svg class="like__icon">
-                                        <use href="img/heart.svg"></use>
-                                    </svg>                            </button>
-                            </div>
-                        </div>
-                        <div class="cards__item">
-                            <div class="item__image">
-                                <img src="img\example.jpeg" alt="card" class="item__image-pic">
-                            </div>
-                            <h3 class="item__title">Корзина-сумка</h3>
-                            <p class="item__reviews">14 отзывов</p>
-                            <div class="item__bottom">
-                                <p class="item__price">5100 ₽</p>
-                                <p class="item__stock">В наличии</p>
-                                <button class="item__like">
-                                    <!-- <svg class="like__icon">
-                                        <use href="img/like.svg">
-                                        </use>
-                                    </svg> -->
+                                <button class="item__like-button">
+                                    <svg class="svg__icon svg__like">
+                                        <use xlink:href="img/svgs/like.svg#like"></use>
+                                    </svg>
                                 </button>
                             </div>
                         </div>
@@ -145,11 +116,10 @@
                             <div class="item__bottom">
                                 <p class="item__price">5100 ₽</p>
                                 <p class="item__stock">В наличии</p>
-                                <button class="item__like">
-                                    <!-- <svg class="like__icon">
-                                        <use href="img/like.svg">
-                                        </use>
-                                    </svg> -->
+                                <button class="item__like-button">
+                                    <svg class="svg__icon svg__like">
+                                        <use xlink:href="img/svgs/like.svg#like"></use>
+                                    </svg>
                                 </button>
                             </div>
                         </div>
@@ -162,11 +132,10 @@
                             <div class="item__bottom">
                                 <p class="item__price">5100 ₽</p>
                                 <p class="item__stock">В наличии</p>
-                                <button class="item__like">
-                                    <!-- <svg class="like__icon">
-                                        <use href="img/like.svg">
-                                        </use>
-                                    </svg> -->
+                                <button class="item__like-button">   
+                                    <svg class="svg__icon svg__like">
+                                        <use xlink:href="img/svgs/like.svg#like"></use>
+                                    </svg>
                                 </button>
                             </div>
                         </div>
@@ -179,11 +148,10 @@
                             <div class="item__bottom">
                                 <p class="item__price">5100 ₽</p>
                                 <p class="item__stock">В наличии</p>
-                                <button class="item__like">
-                                    <!-- <svg class="like__icon">
-                                        <use href="img/like.svg">
-                                        </use>
-                                    </svg> -->
+                                <button class="item__like-button">
+                                    <svg class="svg__icon svg__like">
+                                        <use xlink:href="img/svgs/like.svg#like"></use>
+                                    </svg>
                                 </button>
                             </div>
                         </div>
@@ -196,11 +164,58 @@
                             <div class="item__bottom">
                                 <p class="item__price">5100 ₽</p>
                                 <p class="item__stock">В наличии</p>
-                                <button class="item__like">
-                                    <!-- <svg class="like__icon">
-                                        <use href="img/like.svg">
-                                        </use>
-                                    </svg> -->
+                                <button class="item__like-button">
+                                    <svg class="svg__icon svg__like">
+                                        <use xlink:href="img/svgs/like.svg#like"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cards__item">
+                            <div class="item__image">
+                                <img src="img\example.jpeg" alt="card" class="item__image-pic">
+                            </div>
+                            <h3 class="item__title">Корзина-сумка</h3>
+                            <p class="item__reviews">14 отзывов</p>
+                            <div class="item__bottom">
+                                <p class="item__price">5100 ₽</p>
+                                <p class="item__stock">В наличии</p>
+                                <button class="item__like-button">
+                                    <svg class="svg__icon svg__like">
+                                        <use xlink:href="img/svgs/like.svg#like"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cards__item">
+                            <div class="item__image">
+                                <img src="img\example.jpeg" alt="card" class="item__image-pic">
+                            </div>
+                            <h3 class="item__title">Корзина-сумка</h3>
+                            <p class="item__reviews">14 отзывов</p>
+                            <div class="item__bottom">
+                                <p class="item__price">5100 ₽</p>
+                                <p class="item__stock">В наличии</p>
+                                <button class="item__like-button">
+                                    <svg class="svg__icon svg__like">
+                                        <use xlink:href="img/svgs/like.svg#like"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cards__item">
+                            <div class="item__image">
+                                <img src="img\example.jpeg" alt="card" class="item__image-pic">
+                            </div>
+                            <h3 class="item__title">Корзина-сумка</h3>
+                            <p class="item__reviews">14 отзывов</p>
+                            <div class="item__bottom">
+                                <p class="item__price">5100 ₽</p>
+                                <p class="item__stock">В наличии</p>
+                                <button class="item__like-button">
+                                    <svg class="svg__icon svg__like">
+                                        <use xlink:href="img/svgs/like.svg#like"></use>
+                                    </svg>
                                 </button>
                             </div>
                         </div>     
@@ -210,11 +225,75 @@
             </section>
             <section class="slider">
                 <h2 class="slider__title">Новости и акции</h2>
+                <div class="slider__items">
+                    <img src="img/slides/1.png" alt="слайд 1" class="slider__item">
+                    <img src="img/slides/2.png" alt="слайд 2" class="slider__item">
+                    <button class="slider__button-prv">
+                        <svg class="svg__icon svg__slider-prv">
+                            <use xlink:href="img/svgs/slider__buttons.svg#prev"></use>
+                        </svg>
+                    </button>
+                    <button class="slider__button-nxt">
+                        <svg class="svg__icon svg__slider-nxt">
+                            <use xlink:href="img/svgs/slider__buttons.svg#next"></use>
+                        </svg>
+                    </button>
+                </div>
+                <script src="js/slider.js"></script>
             </section>
     </main>
     <footer class="footer">
         <div class="container footer__container">
-            f
+            <div class="footer__top">
+                <div class="footer__contacts">
+                    <ul class="contacts__title-list">
+                        <li class="contacts__title-item">
+                            Номер телефона:
+                        </li>
+                        <li class="contacts__title-item">
+                            Электронная почта:
+                        </li>
+                    </ul>
+                    <ul class="contacts__content-list">
+                        <li class="contacts__content-item">
+                            8 9ХХ ХХХ-ХХ-ХХ
+                        </li>
+                        <li class="contacts__content-item">
+                            emailexample01@mail.ru
+                        </li>
+                    </ul>
+                </div>
+                <nav class="footer__nav">
+                    <h4 class="footer__nav-title">Помощь</h4>
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item">
+                            <a href="" class="footer__nav-link">
+                                Условия оплаты
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="" class="footer__nav-link">
+                                Условия доставки
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="" class="footer__nav-link">
+                                Условия возврата и обмена
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__bottom">
+                <ul class="footer__copyright-list">
+                    <li class="footer__copyright-item">
+                        Санкт-Петербург, 2023
+                    </li>
+                    <li class="footer__copyright-item">
+                        Все права защищены
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>

@@ -3,9 +3,40 @@
     margin-top: 150px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    /* padding-top: 30px;
-    padding-bottom: 30px; */
+    padding-top: 30px;
+    padding-bottom: 20px;
     font-family: 'Palatino Linotype';
-    font-style: bold;
-    font-size: 0.625em;
+    bottom: 0;
+    justify-content: space-between;
+}
+
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline
+}
+
+.footer__contacts {
+    display: flex;
+    gap: 20px;
+}
+
+.contacts__title-item, .contacts__content-item {
+    line-height: 30px;
+}
+
+.footer__nav-title {
+    padding-bottom: 5px;
+}
+
+.footer__nav-list {
+    font-size: 14px;
+}
+
+.footer__top {
+    padding-bottom: 110px;
+}
+.footer__copyright-list {
+    font-size: 14px;
+    text-align: center;
 }

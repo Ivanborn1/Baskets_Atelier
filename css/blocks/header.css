@@ -2,71 +2,75 @@
     background-color: #D8B897;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
+    height: 120px;
     font-family: 'Palatino Linotype';
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
  
 .header__container {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
- }
-
- .header__logo-pic {
     height: 75px;
- }
+}
 
+.header__logo {
+    height: 100%;
+    width: 210px;
+}
 
 .header__middle {
     display: inline-block;
 }
 
 .middle__search {
-    display: flex;
-    width: 920px;
+    position: relative;
+    width: 900px;
+    height: 40px;
     border-radius: 20px;
-    background: #F2EDE7;
     outline: 2px solid #382F24;
     outline-offset: -2px;
 }
-.middle__search-input {
+
+.search__input {
     width: 100%;
+    height: 100%;
     padding: 10px;
     border: none;
-    outline: none;
-    background: transparent;
+    background: #F2EDE7;
     border-radius: 20px;
 }
 
-.middle__search-button {
+.search__button {
     width: 100px;
-    height: 50px;
-    position: relative; 
+    height: 100%;
+    position: absolute;
+    right: 0px;
     background-color: #D8B897;
     border-radius: 20px;
     border: 2px solid #382F24;
 }
+
 .header__nav-list {
     display: flex;
     justify-content: center;
-    margin-top: 8px;
-    padding-inline-start: 0px;
-}
-
-.header__nav-item {
-    margin-left: 15px;
-    margin-right: 15px;
+    padding-top: 15px;
+    gap: 15px;
 }
 
 .header__tools {
-    display: flex;
-} 
-
-.tools__profile {
+    height: 40px;
     display: flex;
     align-items: center;
+    padding-inline-start: 0px;
+    gap: 15px;
+} 
+
+.tools__items {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .profile__name {
@@ -74,14 +78,12 @@
     font-size: 20px;
 }
 
-.tools__profile__icon {
-    height: 50px;
-    width: 50px;
-}
-
-.tools__profile__icon-pic {
-    height: 50px;
-    width: 50px;
+.tools__item-button {
+    height: 40px;
+    width: 40px;
+    border-radius: 30px;
+    border: none;
+    background-color: transparent;
 }
 
 /* @media screen and (max-width: 1536px) {
@@ -103,7 +105,7 @@
     }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1020px) {
     .middle__search {
         width: 450px;
     }
