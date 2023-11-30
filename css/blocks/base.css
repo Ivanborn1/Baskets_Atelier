@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Palatino Linotype';
+    src: url('../../fonts/Palatino Linotype/palatinolinotype_bold.ttf');
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../../fonts/AvenirNextCyr/AvenirNextCyr-Demi.ttf');
+}
+
+
+html {
+    position: relative;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;    
+}
+
+.body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    color: #382F24;
+    font-size: 18px;
+    background: linear-gradient(0deg, #B488F7 -13.28%, #F2EDE7 22.41%, #F2EDE7 85.36%, #B488F7 108.74%), #F2EDE7;
+    outline: none;
+}
+
+button, a, input {
+    cursor: pointer;
+    /* outline: none; */
+}
+
+ul li {
+    list-style: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, span{
+    margin: 0 auto;
+}
+
+h2, h3{
+    font-family: 'Avenir Next Cyr';
+}
+
+h2 {
+    font-size: 32px;
+    padding-bottom: 20px;
+}
+
+h3, p {
+    font-size: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: #382F24;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: #B488F7;
+}
+
+/* a:visited {
+    color: #B488F7;
+} */
+
+/* a.text {
+    text-decoration: none;
+}
+
+a.text:hover, a.text:active {
+    text-decoration: underline;
+    color: #382F24;
+} */
+
+fieldset {
+    border: none;
+}
+
+.container {
+    max-width: 1410px;
+    margin: 0 auto;
+}
