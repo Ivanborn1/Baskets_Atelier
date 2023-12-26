@@ -1,0 +1,27 @@
+.help__container {
+    font-family: 'Avenir Next Cyr';
+}
+
+.help__container-title {
+    font-size: 1.7vw;
+}
+
+.help__shipping-item, .help__refund-item {
+    list-style: circle;
+    margin-left: 1.6vw;
+}
+
+@media screen and (max-width: 425px) {    
+    .help__container-title {
+        font-size: 5vw;
+    }
+    
+    .help__container-list li {
+        font-size: 4vw;
+        margin-bottom: 2vw;
+    }
+
+    .help__shipping-item, .help__refund-item {
+        margin-left: 4.1vw;
+    }
+}

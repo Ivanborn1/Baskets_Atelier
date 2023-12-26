@@ -1,0 +1,190 @@
+.product {
+    padding-bottom: 4vw;
+    font-family: 'Avenir Next Cyr';
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product__container {
+    max-width: 90vw;
+    border-radius: 0.7vw;
+    background: radial-gradient(82.44% 80.16% at 14.93% 19.79%, #B488F7 0%, rgba(242, 237, 231, 0.00) 100%), radial-gradient(183.37% 163.03% at 108.79% 121.42%, #B488F7 0%, rgba(242, 237, 231, 0.00) 68.16%);
+    padding: 2vw;
+}
+
+.product__top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.product__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product__items {
+    width: 100%;
+    height: 100%;
+}
+
+.product__image {
+    margin-bottom: 1.4vw;
+}
+
+.product__image-pic {
+    width: 100%;
+    outline: 0.5vw solid #382F24;
+    object-fit: fill;
+    border-radius: 0.7vw;
+}
+
+.text__container {
+    width: 100%;
+    background-color: #F2EDE7;
+    padding: 0 1vw;
+    padding-top: 1vw;
+    border-radius: 0.7vw;
+    outline: 0.14vw solid transparent;
+    transition: 0.2s;
+}
+
+.product__title-tags, .product__describtion-text, .product__size-text {
+    padding-bottom: 1vw;
+}
+
+.product__title, .product__describtion-title, .product__size-title {
+    padding-bottom: 0.7vw;
+}
+
+.product__title-tags, .product__describtion-text, .product__size-text, .choice__item-variants legend, .choice__quantity-variants legend, .choice__item-variants label, .choice__quantity-button {
+    font-size: 1.5vw;
+}
+
+.product__title, .product__describtion-title, .product__size-title, .product__price {
+    font-size: 2vw;
+    margin: 0;
+}
+
+.choice__item-variants legend, .choice__quantity-variants legend, .choice__item-variants label {
+    padding-bottom: 0.5vw;
+}
+
+.product__summary {
+    width: 100%;
+}
+
+
+.summary__container {
+    border-radius: 0.7vw;
+    background: #F2EDE7;
+    padding: 2vw;
+    font-size: 0.9vw;
+    outline: 0.14vw solid transparent;
+    transition: 0.2s;
+    margin-bottom: 1.5vw;
+}
+
+.choice__item {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 2vw;
+}
+
+.choice__item-variants {
+    margin-right: 0.7vw;
+}
+
+.choice__radio-button {
+    accent-color: #382F24;
+    background: #E8E5E2;
+    width: 2vw;
+    height: 2vw;
+} 
+
+.choice__quantity-button {
+    width: 70%;
+    height: 3.5vw;
+    border-radius: 1.14vw;
+    border: 0.07vw solid #382F24;
+    background: #E8E5E2;
+    padding: 0.2vw;
+    padding-left: 0.4vw;
+}
+
+.product__price {
+    padding-top: 2vw;
+    text-align: end;
+}
+
+.product__basket-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.product__basket-button {
+    font-family: 'Avenir Next Cyr';
+    font-size: 1.4vw;
+    border-radius: 2vw;
+    border: none;
+    outline: 0.14vw solid transparent;
+    transition: 0.2s;
+    background: #F2EDE7;
+    padding: 0.9vw 2.4vw;
+    font-size: 3vw;
+}
+
+.product__rating {
+    display: flex;
+    gap: 3vw;
+    background-color: #F2EDE7;
+    border-radius: 0.7vw;
+    padding: 0.2vw;
+    padding-right: 2vw;
+    transition: 0.2s;
+    outline: 0.14vw solid transparent;
+}
+
+.rating__number {
+    font-size: 6vw;
+    margin: 0;
+}
+
+.rating__star {
+    display: flex;
+    gap: 0.7vw;
+}
+
+.star__item {
+    width: 6vw;
+    height: 6vw;
+}
+
+.star__active {
+	fill: gold;
+}
+
+@media screen and (max-width: 425px) {    
+    .product__title, .product__describtion-title, .product__size-title {
+        padding-bottom: 0.7vw;
+    }
+    
+    .product__title-tags, .product__describtion-text, .product__size-text, .choice__item-variants legend, .choice__quantity-variants legend, .choice__item-variants label, .choice__quantity-button {
+        font-size: 3vw;
+    }
+    
+    .product__title, .product__describtion-title, .product__size-title, .product__price {
+        font-size: 4vw;
+        margin: 0;
+    }
+    
+    .choice__item-variants legend, .choice__quantity-variants legend, .choice__item-variants label {
+        padding-bottom: 0.5vw;
+    }
+}

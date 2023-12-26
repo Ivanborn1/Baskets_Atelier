@@ -6,10 +6,19 @@
 @font-face {
     font-family: 'Avenir Next Cyr';
     src: url('../../fonts/AvenirNextCyr/AvenirNextCyr-Demi.ttf');
+    font-style: demi;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr Medium';
+    src: url('../../fonts/AvenirNextCyr/AvenirNextCyr-Medium.ttf');
+    font-style: medium;
 }
 
 
 html {
+    font-size: 1.25vw;
+    scroll-behavior: smooth;
     position: relative;
     box-sizing: border-box;
 }
@@ -19,18 +28,17 @@ html {
 }
 
 .body {
+    box-sizing: border-box;
     display: flex;
-    min-height: 100vh;
     flex-direction: column;
+    justify-content: center;
     color: #382F24;
-    font-size: 18px;
-    background: linear-gradient(0deg, #B488F7 -13.28%, #F2EDE7 22.41%, #F2EDE7 85.36%, #B488F7 108.74%), #F2EDE7;
+    background: #F2EDE7;
     outline: none;
 }
 
 button, a, input {
     cursor: pointer;
-    /* outline: none; */
 }
 
 ul li {
@@ -51,12 +59,13 @@ h2, h3{
 }
 
 h2 {
-    font-size: 32px;
-    padding-bottom: 20px;
+    font-size: 1.7vw;
+    padding-bottom: 1.4vw;
 }
 
-h3, p {
-    font-size: 24px;
+p {
+    font-size: 1.7vw;
+    font-style: medium;
 }
 
 a {
@@ -64,26 +73,10 @@ a {
     color: #382F24;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
-a:active {
-    color: #B488F7;
-}
-
-/* a:visited {
-    color: #B488F7;
-} */
-
-/* a.text {
-    text-decoration: none;
-}
-
-a.text:hover, a.text:active {
-    text-decoration: underline;
+legend, label, input, select {
+    font-family: "Avenir Next Cyr";
     color: #382F24;
-} */
+}
 
 fieldset {
     border: none;
@@ -91,5 +84,58 @@ fieldset {
 
 .container {
     max-width: 1410px;
+    width: 90vw;
     margin: 0 auto;
+}
+
+.violet-button:hover {
+    background-color: #dac6fa;
+    transition: 0.3s;
+}
+
+.black__outline-button:hover {
+    outline: 0.14vw solid #382F24;
+    transition: 0.2s;
+}
+
+.required__input {
+    color: red;
+}
+
+.basket__input, .profile__option {
+    height: 3.5vw;
+    border-radius: 1.4vw;
+    border: 0.14vw solid #382F24;
+    background: #E8E5E2;
+    padding: 0.7vw;
+    padding-bottom: 0.8vw;
+}
+
+
+@media screen and (max-width: 425px) {
+    .container {
+        max-width: 1410px;
+        width: 95vw;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 7vw;
+        padding-bottom: 3.4vw;
+    }
+    
+    p {
+        font-size: 5vw;
+    }
+
+    .basket__input, .profile__option {
+        height: 8vw;
+        border: 0.5vw solid #382F24;
+        border-radius: 6vw;
+        padding-left: 2vw;
+    }
+
+    .black__outline-button:hover {
+        outline: 0.5vw solid #382F24;
+    }
 }

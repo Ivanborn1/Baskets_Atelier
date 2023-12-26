@@ -1,6 +1,13 @@
 @import url(blocks/normalize.css);
 @import url(blocks/svg.css);
-@import url(blocks/base.css);
 @import url(blocks/header.css);
 @import url(blocks/main.css);
 @import url(blocks/footer.css);
+@import url(blocks/card.css);
+@import url(blocks/catalog.css);
+@import url(blocks/about.css);
+@import url(blocks/help.css);
+@import url(blocks/registration.css);
+@import url(blocks/profile.css);
+@import url(blocks/basket.css);
+@import url(blocks/base.css);

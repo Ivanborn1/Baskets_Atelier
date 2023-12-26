@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baskets Atelier</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="img/title__logo.png"/>
+</head>
+
+<body class="body">
+    <section class="registration">
+        <div class="registration__container">
+            <div class="registration__menu">
+                <div class="registration__top">
+                    <p class="registration__text registration__title">Регистрация</p>
+                    <button class="registration__close violet-button">
+                        <svg class="svg__icon svg__cross">
+                            <use xlink:href="img/svgs/tools.svg#cross"></use>
+                        </svg>
+                    </button>
+                </div>
+                <form action="" class="registration__middle">
+                    <fieldset class="registration__fieldset">
+                        <legend>Электронная почта</legend>
+                        <input type="text" name="registration" class="email__input registration__input basket__input">
+                    </fieldset>
+                    <fieldset class="registration__fieldset">
+                        <legend>Номер телефона</legend>
+                        <input type="number" name="registration" class="phone__input registration__input basket__input">
+                    </fieldset>
+                    <fieldset class="registration__fieldset">
+                        <legend>Пароль</legend>
+                        <input type="password" name="registration" class="password1__input registration__input basket__input">
+                    </fieldset>
+                    <fieldset class="registration__fieldset">
+                        <legend>Подтверждение пароля</legend>
+                        <input type="password" name="registration" class="password2__input registration__input basket__input">
+                    </fieldset>
+                </form>
+                <a href="profile.html" class="registration__button violet-button">
+                    Зарегестрироваться
+                </a>
+                <div class="registration__bottom">
+                    <p class="registrtation__hint">
+                        Уже зарегестрированы?
+                    </p>
+                    <button class="login__open violet-button">
+                        Вход
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="login">
+        <div class="login__container">
+            <div class="login__menu">
+                <div class="login__top">
+                    <p class="login__text login__title">Вход</p>
+                    <button class="login__close">
+                        <svg class="svg__icon svg__cross">
+                            <use xlink:href="img/svgs/tools.svg#cross"></use>
+                        </svg>
+                    </button>
+                </div>
+                <form action="" class="login__middle">
+                    <fieldset class="login__fieldset">
+                        <legend>Электронная почта или Номер телефона</legend>
+                        <input type="text" name="login" class="login__input basket__input">
+                    </fieldset>
+                    <fieldset class="login__fieldset">
+                        <legend>Пароль</legend>
+                        <input type="password" name="login" class="login__input basket__input">
+                    </fieldset>
+                </form>
+                <a href="profile.html" class="login__button violet-button">
+                    Войти
+                </a>
+                <div class="login__bottom">
+                    <p class="registrtation__hint">
+                        Зарегестрируйтесь сейчас
+                    </p>
+                    <button class="registration__open registration__open-inner violet-button">
+                        Регистрация
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__logo">
+                <a href="index.html" class>
+                    <svg class="svg__icon svg__logo">
+                        <use xlink:href="img/svgs/logo.svg#logo"></use>
+                    </svg>
+                    <svg class="svg__icon svg__logo2">
+                        <use xlink:href="img/svgs/logo.svg#logo2"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="header__middle">
+                <form action="" class="middle__search">
+                    <input type="text" placeholder="Поиск товара" class="search__input">
+                    <button type="submit" class="search__button">
+                        <svg class="svg__icon svg__search">
+                            <use xlink:href="img/svgs/search.svg#search"></use>
+                        </svg>
+                    </button>
+                </form>
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a href="catalog.html" class="header__nav-link">
+                                Товары
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="help.html" class="header__nav-link">
+                                Помощь
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="about.html" class="header__nav-link">
+                                О нас
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__tools">
+                <p class="profile__name">Гость</p>
+                <button class="profile__button registration__open">
+                    <svg class="svg__icon svg__profile">
+                        <use xlink:href="img/svgs/tools.svg#profile"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="header__gradient"></div>
+        <div class="container container__main">
+            <h1></h1>
+            <section class="help">
+                <h2 class="help__title">Помощь</h2>
+                <div class="help__container">
+                    <p class="help__container-title" id="payment">
+                        Условия оплаты
+                    </p>
+                    <ul class="help__container-list">
+                        <li>
+                            Все транзакции проходят с помощью безопасной технологии электронных платежных систем.
+                        </li>
+                        <li>
+                            Предоплата заказа составляет 100%.
+                        </li>
+                    </ul>
+                    <P class="help__container-title" id="shipping">
+                        Условия доставки
+                    </P>
+                    <ul class="help__container-list">
+                        <li>Доставка осуществляется с помощью таких сервисов, как:
+                            <ul class="help__shipping-list">
+                                <li class="help__shipping-item">
+                                    Почта России
+                                </li>
+                                <li class="help__shipping-item">
+                                    СДЭК
+                                </li>
+                                <li class="help__shipping-item" >
+                                    Boxberry
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            В случае необходимости, в личной беседе мы сможем подобрать альтернативный вариант.
+                        </li>
+                        <br>
+                        <li>
+                            Стоимость доставки оговаривается с Вами заранее, до размещения заказа.
+                        </li>
+                        <li>
+                            Стоимость зависит от габаритов посылки, веса, места назначения и сроков доставки.                            
+                        </li>
+                        <br>
+                        <li>
+                            ТОВАР ИЗ НАЛИЧИЯ отправляется в течении 1~3 дней после оплаты. 
+                        </li>
+                        <li>
+                            ТОВАР НА ЗАКАЗ, готовый к доставке, отправляется течении 1~3 дней. 
+                        </li>
+                        <br>
+                        <li>
+                            После отправки вы получите трек-номер для отслеживания посылки. 
+                        </li>
+                        <li>
+                            Вы не можете отменить заказ после того, как он получит статус "ОТПРАВЛЕН"!
+                        </li>
+                        <br>
+                        <li>
+                            Срок изготовления ТОВАРА ПОД ЗАКАЗ оговаривается индивидуально. 
+                        </li>
+                        <li>
+                            В среднем от 1 до 2 недель, в зависимости от очерёдности и загруженности мастера на момент заказа.
+                        </li>
+                    </ul>
+                    <p class="help__container-title" id="refund">
+                        Условия возврата и обмена
+                    </p>
+                    <ul class="help__container-list">
+                        <li>Изделие подлежит обмену и возврату, если оно:
+                            <ul class="help__refund-list">
+                                <li class="help__refund-item">
+                                    НЕ было в употреблении, то есть с сохраненным товарным видом, потребительскими свойствами и оригинальной упаковкой
+                                </li>
+                                <li class="help__refund-item">
+                                    НЕ является персонализированным, то есть созданным по вашим размерам или с выбором индивидуального цвета
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Товар должен быть отправлен обратно в течение 14 дней после получения.
+                        </li>
+                        <br>
+                        <li>
+                            В течении 3 дней с момента получения продавцом товара в надлежащем виде вам будут возвращены средства за минусом транспортных расходов (стоимости прямой и обратной доставки)
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <div class="footer__gradient"></div>
+    </main>
+    <footer class="footer">
+        <div class="footer__gradient"></div>
+        <div class="container footer__container">
+            <div class="footer__top">
+                <div class="footer__contacts">
+                    <ul class="contacts__title-list">
+                        <li class="contacts__title-item">
+                            Номер телефона:
+                        </li>
+                        <li class="contacts__title-item">
+                            Электронная почта:
+                        </li>
+                    </ul>
+                    <ul class="contacts__content-list">
+                        <li class="contacts__content-item">
+                            8 9ХХ ХХХ-ХХ-ХХ
+                        </li>
+                        <li class="contacts__content-item">
+                            emailexample01@mail.ru
+                        </li>
+                    </ul>
+                </div>
+                <nav class="footer__nav">
+                    <a href="help.html" class="footer__nav-title">Помощь</a>
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item">
+                            <a href="help.html#payment" class="footer__nav-link">
+                                Условия оплаты
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="help.html#shipping" class="footer__nav-link">
+                                Условия доставки
+                            </a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="help.html#refund" class="footer__nav-link">
+                                Условия возврата и обмена
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__bottom">
+                <ul class="footer__copyright-list">
+                    <li class="footer__copyright-item">
+                        Санкт-Петербург, 2023
+                    </li>
+                    <li class="footer__copyright-item">
+                        Все права защищены
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="js/registration.js"></script>
+</body>
+</html>

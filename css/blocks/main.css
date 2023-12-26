@@ -3,95 +3,128 @@
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    padding-bottom: 50px;
-    padding-bottom: 60px;
-    padding-top: 50px;
+    padding-bottom: 4.1vw;
     font-family: 'Avenir Next Cyr';
 }
 
 .banner__title {
     font-family: 'Palatino Linotype';
-    font-size: 50px;
+    font-size: 3.5vw;
 }
 
 .banner__image {
-    flex-shrink: 1;
+    display: block;
+    width: 40vw;
 }
 
 .banner__image-pic {
     width: 100%;
-    height: 460px;
-    border-radius: 20px;
+    object-fit: fill;
+    border-radius: 1.4vw;
 }
 
 .banner__description {
-    font-size: 24px;
+    font-size: 1.6vw;
     font-style: italic;
     align-items:stretch;
 }
 
 .banner__button {
-    width: 210px;
-    height: 50px;
-    border-radius: 20px;
-    font-size: 20px;
+    width: 14.6vw;
+    height: 3.4vw;
+    border-radius: 1.4vw;
+    font-size: 1.4vw;
     background: radial-gradient(99.28% 108.44% at 49.88% 45.37%, rgba(180, 136, 247, 0.50) 18.73%, rgba(242, 237, 231, 0.00) 100%);
     border: none;
     transition: 0.3s;
+    padding: 0.9vw;
 }
 
 .cards {
     font-family: 'Avenir Next Cyr';
-    margin-bottom: 60px;
 }
 
 .cards__content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .cards__items {
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
     gap: 10px;
-    padding-bottom: 20px;
 }
 
 .cards__item {
-    width: 345px;
-    height: 480px;
-    padding: 20px;
-    border-radius: 30px;
+    width: 21vw;
+    padding: 1vw;
+    border-radius: 2vw;
     background: radial-gradient(99.28% 108.44% at 49.88% 45.37%, #B488F7 18.73%, rgba(242, 237, 231, 0.00) 100%);
     transition: 0.3s;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
 }
 
 .item__image {
     display: flex;
-    width: 304px;
-    height: 304px;
+    width: 100%;
+    margin-bottom: 0.7vw;
 }
 
 .item__image-pic {
-    border-radius: 20px;
+    border-radius: 1.4vw;
     width: 100%;
     object-fit: fill;
 }
 
 .item__title {
-    padding-top: 10px
+    font-size: 2.5vw;
+    position: inline-block;
+}   
+
+
+.item__title:hover {
+    text-decoration: underline;
 }
 
-.item__reviews {
+.card__rating-mini {
+	display: flex;
+    gap: 0.34vw;
+    padding-top: 0.34vw;
+    padding-bottom: 0.7vw;
+}
+
+.rating__number-mini {
+    font-size: 2vw;
     margin: 0;
-    margin-top: 5px;
-    font-size: 20px;
+}
+
+.rating__star-mini{
+    padding-top: 0.14vw;
+}
+
+.star__icon {
+	padding: 0;
+	font-size: 2vw;
+	line-height: 1;
+	color: #382F24;
+}
+
+
+.star__active {
+	color: gold;
 }
 
 .item__bottom {
+    margin-top: 1vw;
+}
+
+.item__text {
     display: flex;
     align-content: stretch;
     flex-direction: row;
@@ -100,70 +133,52 @@
 }
 
 .item__like-button {
-    width: 60px;
-    height: 60px;
-    border-radius: 50px;
-    border: none;
-    background-color: #F2EDE7;
-    transition: 0.3s;
-    padding: 0;
+    display: none;
 }
 
 .item__price {
-    margin: 0px;
+    margin: 0;
+    font-size: 2vw;
 }
 
 .item__stock {
-    margin: 0px;
-    margin-left: 35px;
-    font-size: 20px;
+    display: block;
+    margin: 0;
+    margin-left: 2.4vw;
+    font-size: 2vw;
 }
 
-.cards__other {
+.catalog__button, .main-button, .save-button, .discard-button {
+    text-align: center;
     font-family: 'Avenir Next Cyr';
-    font-size: 20px;
-    width: 345px;
-    height: 50px;
-    border-radius: 30px;
+    font-size: 1.4vw;
+    border-radius: 2vw;
     border: none;
     background: radial-gradient(99.28% 108.44% at 49.88% 45.37%, rgba(180, 136, 247, 0.50) 18.73%, rgba(242, 237, 231, 0.00) 100%);
     transition: 0.3s;
+    padding: 0.9vw 2.4vw;
+    margin-top: 1vw;
+}
+
+.main-button {
+    text-align: center;
+}
+
+.slider {
+    padding-top: 4.1vw;
 }
 
 .slider__items {
+    display: flex;
+    gap: 1.4vw;
     position: relative;
     background-color: #D8B897;
-    border-radius: 20px;
-    padding: 5px;
+    border-radius: 1.4vw;
+    padding: 0.4vw;
     max-width: 1410px;
-    max-height: 360px;
+    max-height: 25vw;
     overflow: hidden;
 }
-
-.slider__button-prv {
-    position: absolute;
-    top: 134px;
-    left: 30px;
-    width: 84px;
-    height: 84px;
-    background-color: #F2EDE7;
-    border: none;
-    border-radius: 50px;
-    opacity: 0.3;
-}
-
-.slider__button-nxt {
-    position: absolute;
-    top: 134px;
-    right: 30px;
-    width: 84px;
-    height: 84px;
-    background-color: #F2EDE7;
-    border: none;
-    border-radius: 50px;
-    opacity: 0.3;
-}
-
 
 .slider__item {
     width: 100%;
@@ -171,10 +186,28 @@
     object-fit: cover;
 }
 
-.cards__item:hover, .banner__button:hover, .cards__other:hover {
-    /* background: radial-gradient(99.28% 108.44% at 49.88% 50%, #bc98f6 18.73%, rgba(242, 237, 231, 0.00) 100%); */
-    background-color: #dac6fa;
-    transition: 0.3s;
+.slider__button-prv {
+    position: absolute;
+    top: 38%;
+    left: 3%;
+    width: 6vw;
+    height: 6vw;
+    background-color: #F2EDE7;
+    border: none;
+    border-radius: 3.5vw;
+    opacity: 0.3;
+}
+
+.slider__button-nxt {
+    position: absolute;
+    top: 38%;
+    right: 3%;
+    width: 6vw;
+    height: 6vw;
+    background-color: #F2EDE7;
+    border: none;
+    border-radius: 3.5vw;
+    opacity: 0.3;
 }
 
 .slider__button-nxt:hover, .slider__button-prv:hover {
@@ -187,13 +220,86 @@
     transition: 0.3s;
 }
 
-.item__like-button:hover {
-    background-color: #FE8E86;
+.item__image-pic:hover {
+    outline: 0.14vw solid #382F24;
     transition: 0.2s;
 }
 
-@media screen and (max-width: 1410) {
-    .footer__top {
-        justify-content: space-evenly;
+.item__image-pic:not(:hover) {
+    outline: 0.14vw solid transparent;
+    transition: 0.2s;
+}
+
+@media screen and (max-width: 425px) {
+    .banner {
+        padding-bottom: 6vw;
+    }
+
+    .banner__image {
+        display: none;
+    }
+
+    .banner__title {
+        font-size: 8vw;
+    }
+
+    .banner__description {
+        font-size: 5vw;
+    }
+
+    .banner__button, .catalog__button, .main-button {
+        margin-top: 2vw;
+        padding: 2vw 2vw;
+        font-size: 3vw;
+        border-radius: 4vw;
+    }
+
+    .cards__item {
+        width: 43vw;
+        max-height: 70vw;
+        padding: 2vw;
+    }
+
+    .item__title {
+        font-size: 5vw;
+    }
+    
+    .card__rating-mini {
+        gap: 2vw;
+    }
+
+    .rating__star-mini {
+        gap: 5vw;
+    }
+    
+    .rating__number-mini {
+        font-size: 5vw;
+    }
+    
+    .star__icon {
+        padding: 0;
+        font-size: 5vw;
+    }
+
+    .item__price, .item__stock {
+        font-size: 4vw;
+    }
+
+    .slider__button-prv {
+        position: absolute;
+        top: 0.4vw;
+        left: 0.4vw;
+        width: 10vw;
+        height: 96%;
+        border-radius: 1.4vw;
+    }
+    
+    .slider__button-nxt {
+        position: absolute;
+        top: 0.4vw;
+        right: 0.4vw;
+        width: 10vw;
+        height: 96%;
+        border-radius: 1.4vw;
     }
 }

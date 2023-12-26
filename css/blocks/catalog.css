@@ -1,0 +1,26 @@
+.cards__sort {
+    padding-bottom: 1.7vw;
+}
+
+.sort__choice {
+    padding: 0;
+    display: flex;
+    gap: 1vw;  
+}
+
+.sort__select {
+    transition: 0.3s;
+    color: #382F24;
+    border-radius: 2vw;
+    border: none;
+    padding-left: 0.4vw;
+    padding-right: 0.4vw;
+    padding-bottom: 0.2vw;
+    background: radial-gradient(99.28% 108.44% at 49.88% 45.37%, rgba(180, 136, 247, 0.50) 18.73%, rgba(242, 237, 231, 0.00) 100%);
+}
+
+@media screen and (max-width: 425px) {
+    .sort__title, .sort__select {
+        font-size: 3vw;
+    }
+}

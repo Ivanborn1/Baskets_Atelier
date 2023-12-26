@@ -7,3 +7,11 @@ svg {
 .svg__like {
     fill: transparent;
 }
+
+.svg__star {
+    fill: #F2EDE7;
+}
+
+.svg__logo2 {
+    display: none;
+}

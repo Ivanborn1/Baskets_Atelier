@@ -1,0 +1,62 @@
+.basket-title {
+    font-size: 2.22vw;    
+    font-family: 'Avenir Next Cyr';
+    padding-bottom: 1vw;
+}
+
+.basket__option {
+    width: 50%;
+}
+
+.basket__checkbox span {
+    font-family: 'Palatino Linotype';
+    padding-left: 0.7vw;
+}
+
+.basket__summary-button {
+    width: 15vw;
+}
+
+.save-button {
+    margin-right: 2vw;
+}
+
+.discard-button {
+    font-family: 'Avenir Next Cyr';
+    font-size: 1.4vw;
+    border-radius: 2vw;
+    border: none;
+    outline: 0.14vw solid transparent;
+    transition: 0.2s;
+    background: #F2EDE7;
+    padding: 0.9vw 2.4vw;
+    margin-top: 1vw;
+}
+
+@media screen and (max-width: 425px) {
+    .basket__data-title {
+        padding-top: 2vw;
+    }
+    
+    .basket__summary {
+        margin-top: 2vw;
+    }
+        
+    .basket__option {
+        width: 70%;
+    }
+    
+    .save-button, .discard-button {
+        width: 22.8vw;
+        height: 5vw;
+        font-size: 3vw;
+    }
+
+    .basket__data-item label, .basket__data-item legend, .basket__data-item input, .basket__data-item select {
+        font-size: 5vw;
+    }
+    
+    .basket__data-item input, .basket__data-item select {
+        margin-bottom: 3vw;
+    }
+}

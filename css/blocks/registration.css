@@ -1,0 +1,140 @@
+.registration {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.70);
+    z-index: 1;
+    padding: 10vh;
+}
+
+.login {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.70);
+    z-index: 1;
+    padding: 25.1vh;
+}
+
+.registration__container, .login__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.registration__menu, .login__menu {
+    width: 40vw;;
+    border-radius: 1vw;
+    position: fixed;
+    padding: 1.4vw;
+    background: #F2EDE7;
+    font-family: "Avenir Next Cyr";
+}
+    
+.registration__top, .login__top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2vw;
+}
+
+.registration__middle, .login__middle {
+    padding-bottom: 0.9vw;
+}
+
+.registration__bottom, .login__bottom {
+    display: flex;
+    align-items: baseline;    
+    justify-content: space-between;
+    margin-top: 1.6vw;
+    border-top: 0.5vw solid #B488F7;
+    padding: 0.7vw;
+}
+
+.registration__close, .login__close {
+    width: 2vw;
+    height: 2vw;
+    border-radius: 2vw;
+    border: none;
+    transition: 0.3s;
+    background: radial-gradient(99.28% 108.44% at 49.88% 45.37%, rgba(180, 136, 247, 0.50) 18.73%, rgba(242, 237, 231, 0.00) 100%);
+}
+
+.registration__open, .login__open {
+    padding: 0 0.34vw;
+}
+
+.registration__text, .registrtation__hint, .login__text, .login__hint {
+    margin: 0;
+}
+
+.registration__fieldset, .login__fieldset {
+    padding: 0.7vw;
+    margin: 0;
+}
+
+.registration__input, .login__input {
+    width: 70%;
+}
+
+.registration__button, .login__open, .registration__open-inner  {
+    text-align: center;
+    color: #382F24;
+    padding: 0.7vw 1vw;
+    border-radius: 2vw;
+    border: none;
+    transition: 0.3s;
+    background: radial-gradient(99.28% 108.44% at 49.88% 45.37%, rgba(180, 136, 247, 0.50) 18.73%, rgba(242, 237, 231, 0.00) 100%);
+}
+
+@media screen and (max-width: 425px) {    
+    .registration, .login {
+        padding: 10vw;
+    }
+    
+    .registration__menu, .login__menu {
+        width: 80vw;
+        border-radius: 4vw;
+        padding: 3vw;
+    }
+    
+    .registration__middle, .login__middle {
+        padding-bottom: 4vw;
+    }
+    
+    .registration__bottom, .login__bottom {
+        display: flex;
+        align-items: baseline;    
+        justify-content: space-between;
+        margin-top: 4vw;
+        border-top: 1vw solid #B488F7;
+        padding: 2vw;
+    }
+    
+    .registration__close, .login__close {
+        width: 6vw;
+        height: 6vw;
+        border-radius: 6vw;
+        border: none;
+        transition: 0.3s;
+        background: radial-gradient(99.28% 108.44% at 49.88% 45.37%, rgba(180, 136, 247, 0.50) 18.73%, rgba(242, 237, 231, 0.00) 100%);
+    }
+    
+    .registration__text, .registrtation__hint, .login__text, .login__hint {
+        font-size: 4vw;
+    }
+    
+    .registration__fieldset, .login__fieldset {
+        padding: 0.7vw;
+        margin: 0;
+        font-size: 3vw;
+    }
+    
+    .registration__button, .login__open, .registration__open-inner  {
+        padding: 2vw 2vw;
+        font-size: 3vw;
+        border-radius: 4vw;
+    }
+}

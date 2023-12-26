@@ -141,182 +141,214 @@
     <main class="main">
         <div class="header__gradient"></div>
         <div class="container container__main">
-            <section class="banner">
-                <div class="banner__image">
-                    <img src="img/banner.jpeg" alt="banner" class="banner__image-pic"/>
-                </div>
-                <div class="banner__info">
-                    <div class="banner__top">
-                        <h1 class="banner__title">
-                            Плетеные<br>корзины
-                        </h1>
-                        <p class="banner__description">
-                            Натуральные материалы<br>и высокое качество!
-                        </p>
+            <section class="product">
+                <div class="product__container">
+                    <div class="product__top">
+                        <div class="product__items">
+                            <div class="product__image">
+                                <img src="img/example.jpeg" class="product__image-pic"/>
+                            </div>
+                            <div class="product__rating black__outline-button">
+                                <div class="rating__star">
+                                    <div class="star__item">
+                                        <svg class="svg__icon svg__star star__active">
+                                            <use xlink:href="img/svgs/star.svg#star"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="star__item">
+                                        <svg class="svg__icon svg__star star__active">
+                                            <use xlink:href="img/svgs/star.svg#star"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="star__item">
+                                        <svg class="svg__icon svg__star star__active">
+                                            <use xlink:href="img/svgs/star.svg#star"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="star__item">
+                                        <svg class="svg__icon svg__star star__active">
+                                            <use xlink:href="img/svgs/star.svg#star"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="star__item">
+                                        <svg class="svg__icon svg__star star__active">
+                                            <use xlink:href="img/svgs/star.svg#star"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="rating__number">5</p>
+                            </div>
+                        </div>
+                        <div class="product__text">
+                            <div class="text__container black__outline-button">
+                                <h1 class="product__title">
+                                    КОРЗИНА ДЛЯ ПИКНИКА.<br>КОРЗИНА-СУМКА ДЖЕЙН БИРКИН
+                                </h1>
+                                <ul class="product__title-tags">
+                                    <li>
+                                        Корзина для пикника с крышкой.
+                                    </li>
+                                    <li>
+                                        Сумка-корзина для прогулок и походов на рынок.
+                                    </li>
+                                </ul>
+                                <h3 class="product__describtion-title">
+                                    Описание
+                                </h3>
+                                <ul class="product__describtion-text">
+                                    <li>
+                                        Что можно сказать об этой корзине? Она универсальна.
+                                    </li>
+                                    <li>
+                                        Можно взять её с собой на пикник сходить, на гламурную тусовку или за покупками.
+                                    </li>
+                                    <li>
+                                        Она вместительная, не громоздкая, но, что самое главное, с ней остаться незамеченным у вас не получится.
+                                    </li>
+                                    <li>
+                                        Является отличным компаньоном для лета. 
+                                    </li>
+                                </ul>
+                                <h3 class="product__size-title">
+                                    Размеры
+                                </h3>
+                                <ul class="product__size-text">
+                                    <li>
+                                        Высота : 22см
+                                    </li>
+                                    <li>
+                                        Высота с ручкой : 37см
+                                    </li>
+                                    <li>
+                                        Ширина и длина снизу : 17см
+                                    </li>
+                                    <li>
+                                        Ширина и длина сверху : 25см
+                                    </li>
+                                </ul>
+                                <h3 class="product__size-title">
+                                    Уход
+                                </h3>
+                                <ul class="product__size-text">
+                                    <li>
+                                        Протереть влажной губкой, дать высохнуть.
+                                    </li>
+                                    <li>
+                                        Не использовать  абразивные средства.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>  
+                        <div class="product__summary">
+                            <div class="summary__container black__outline-button">
+                                <div class="product__choice">
+                                    <form class="choice__item">
+                                        <fieldset class="choice__item-variants">
+                                            <legend class="choice__item-title">
+                                                Отделка ручки :
+                                            </legend>
+                                            <label class="choice__radio">
+                                                <input type="radio" value="black_skin" name="handle" class="choice__radio-button"/>
+                                                <span> 
+                                                    Черная кожа<br/>
+                                                </span>
+                                            </label>
+                                            <label class="choice__radio">
+                                                <input type="radio" value="sand_skin" name="handle" class="choice__radio-button"/>
+                                                <span> 
+                                                    Песочная кожа<br/>
+                                                </span>
+                                            </label>
+                                            <label class="choice__radio">
+                                                <input type="radio" value="brown_skin" name="handle" class="choice__radio-button"/>
+                                                <span> 
+                                                    Темно-коричневая кожа<br/>
+                                                </span>
+                                            </label>
+                                        </fieldset>
+                                        <fieldset class="choice__item-variants">
+                                            <legend>
+                                                Внутренний чехол :
+                                            </legend>
+                                            <label class="choice__radio">
+                                                <input type="radio" value="nocase" name="case" class="choice__radio-button"/>
+                                                <span> 
+                                                    Без чехла<br/>
+                                                </span>
+                                            </label>
+                                            <label class="choice__radio">
+                                                <input type="radio" value="inner_case" name="case" class="choice__radio-button changing__price"/>
+                                                <span> 
+                                                    Внутренний чехол<br/>(+
+                                                    <span value="addition">
+                                                        500
+                                                    </span>₽)
+                                                    <br/>
+                                                </span>
+                                            </label>
+                                        </fieldset>
+                                        <fieldset class="choice__item-variants">
+                                            <legend>
+                                                Цвет корзины :
+                                            </legend>
+                                            <label class="choice__radio">
+                                                <input type="radio" value="light_color" name="color" class="choice__radio-button"/>
+                                                <span> 
+                                                    Светлая корзина<br/>
+                                                </span>
+                                            </label>
+                                            <label class="choice__radio">
+                                                <input type="radio" value="red_color" name="color" class="choice__radio-button"/>
+                                                <span> 
+                                                    Рыжая корзина<br/>(цвет дуб)<br/>
+                                                </span>
+                                            </label>
+                                            <label class="choice__radio">
+                                                <input type="radio" value="black_color" name="color" class="choice__radio-button changing__price"/>
+                                                <span> 
+                                                    Черная корзина<br/>(+
+                                                    <span value="addition">
+                                                        500
+                                                    </span>
+                                                    ₽)
+                                                    <br/>
+                                                </span>
+                                            </label>
+                                        </fieldset>
+                                        <fieldset class="choice__quantity-variants">
+                                            <legend>
+                                                Количество :
+                                            </legend>
+                                            <label class="choice__radio">
+                                                <input type="number" value="quantity" class="choice__quantity-button" value="1"/>
+                                            </label>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                                <h3 class="product__price">
+                                    Итого: 
+                                    <span value="price">
+                                        5100
+                                    </span>
+                                    ₽
+                                </h3>
+                            </div>
+                            <div class="product__basket-container">
+                                <a class="product__basket-button black__outline-button" href="basket.html">
+                                    Заказать
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <a class="banner__button violet-button" href="catalog.html">Перейти в каталог</a>
                 </div>
+                <a class="main-button violet-button" href="catalog.html">
+                    Вернуться на главную
+                </a>
             </section>
             <section class="cards">
                 <h2 class="cards__title">Популярные товары</h2>
                 <div class="cards__content">
                     <div class="cards__items">
-                        <div class="cards__item violet-button">
-                            <div class="item__top">
-                                <div class="item__image" href="card.html">
-                                    <a href="card.html">
-                                        <img src="img/example.jpeg" class="item__image-pic"/>
-                                    </a>
-                                </div>
-                                <a class="item__title" href="card.html">Корзина-сумка</a>
-                            </div>
-                            <div class="item__bottom">
-                                <div class="card__rating-mini">
-                                    <div class="rating__star-mini">
-                                        <span class="star__icon star__active">★</span>	
-                                        <span class="star__icon star__active">★</span>    
-                                        <span class="star__icon star__active">★</span>  
-                                        <span class="star__icon star__active">★</span>    
-                                        <span class="star__icon star__active">★</span>
-                                    </div>
-                                    <p class="rating__number-mini">5</p>
-                                </div>
-                                <div class="item__text">
-                                    <p class="item__price">5100 ₽</p>
-                                    <p class="item__stock">В наличии</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cards__item violet-button">
-                            <div class="item__top">
-                                <div class="item__image" href="card.html">
-                                    <a href="card.html">
-                                        <img src="img/example.jpeg" class="item__image-pic"/>
-                                    </a>
-                                </div>
-                                <a class="item__title" href="card.html">Корзина-сумка</a>
-                            </div>
-                            <div class="item__bottom">
-                                <div class="card__rating-mini">
-                                    <div class="rating__star-mini">
-                                        <span class="star__icon star__active">★</span>	
-                                        <span class="star__icon star__active">★</span>    
-                                        <span class="star__icon star__active">★</span>  
-                                        <span class="star__icon star__active">★</span>    
-                                        <span class="star__icon star__active">★</span>
-                                    </div>
-                                    <p class="rating__number-mini">5</p>
-                                </div>
-                                <div class="item__text">
-                                    <p class="item__price">5100 ₽</p>
-                                    <p class="item__stock">В наличии</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cards__item violet-button">
-                            <div class="item__top">
-                                <div class="item__image" href="card.html">
-                                    <a href="card.html">
-                                        <img src="img/example.jpeg" class="item__image-pic"/>
-                                    </a>
-                                </div>
-                                <a class="item__title" href="card.html">Корзина-сумка</a>
-                            </div>
-                            <div class="item__bottom">
-                                <div class="card__rating-mini">
-                                    <div class="rating__star-mini">
-                                        <span class="star__icon star__active">★</span>	
-                                        <span class="star__icon star__active">★</span>    
-                                        <span class="star__icon star__active">★</span>  
-                                        <span class="star__icon star__active">★</span>    
-                                        <span class="star__icon star__active">★</span>
-                                    </div>
-                                    <p class="rating__number-mini">5</p>
-                                </div>
-                                <div class="item__text">
-                                    <p class="item__price">5100 ₽</p>
-                                    <p class="item__stock">В наличии</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cards__item violet-button">
-                            <div class="item__top">
-                                <div class="item__image" href="card.html">
-                                    <a href="card.html">
-                                        <img src="img/example.jpeg" class="item__image-pic"/>
-                                    </a>
-                                </div>
-                                <a class="item__title" href="card.html">Корзина-сумка</a>
-                            </div>
-                            <div class="item__bottom">
-                                <div class="card__rating-mini">
-                                    <div class="rating__star-mini">
-                                        <span class="star__icon star__active">★</span>	
-                                        <span class="star__icon star__active">★</span>    
-                                        <span class="star__icon star__active">★</span>  
-                                        <span class="star__icon star__active">★</span>    
-                                        <span class="star__icon star__active">★</span>
-                                    </div>
-                                    <p class="rating__number-mini">5</p>
-                                </div>
-                                <div class="item__text">
-                                    <p class="item__price">5100 ₽</p>
-                                    <p class="item__stock">В наличии</p>
-                                </div>
-                            </div>
-                        </div>  
-                        <div class="cards__item violet-button">
-                            <div class="item__top">
-                                <div class="item__image" href="card.html">
-                                    <a href="card.html">
-                                        <img src="img/example.jpeg" class="item__image-pic"/>
-                                    </a>
-                                </div>
-                                <a class="item__title" href="card.html">Корзина-сумка</a>
-                            </div>
-                            <div class="item__bottom">
-                                <div class="card__rating-mini">
-                                    <div class="rating__star-mini">
-                                        <span class="star__icon star__active">★</span>	
-                                        <span class="star__icon star__active">★</span>    
-                                        <span class="star__icon star__active">★</span>  
-                                        <span class="star__icon star__active">★</span>    
-                                        <span class="star__icon star__active">★</span>
-                                    </div>
-                                    <p class="rating__number-mini">5</p>
-                                </div>
-                                <div class="item__text">
-                                    <p class="item__price">5100 ₽</p>
-                                    <p class="item__stock">В наличии</p>
-                                </div>
-                            </div>
-                        </div>  
-                        <div class="cards__item violet-button">
-                            <div class="item__top">
-                                <div class="item__image" href="card.html">
-                                    <a href="card.html">
-                                        <img src="img/example.jpeg" class="item__image-pic"/>
-                                    </a>
-                                </div>
-                                <a class="item__title" href="card.html">Корзина-сумка</a>
-                            </div>
-                            <div class="item__bottom">
-                                <div class="card__rating-mini">
-                                    <div class="rating__star-mini">
-                                        <span class="star__icon star__active">★</span>	
-                                        <span class="star__icon star__active">★</span>    
-                                        <span class="star__icon star__active">★</span>  
-                                        <span class="star__icon star__active">★</span>    
-                                        <span class="star__icon star__active">★</span>
-                                    </div>
-                                    <p class="rating__number-mini">5</p>
-                                </div>
-                                <div class="item__text">
-                                    <p class="item__price">5100 ₽</p>
-                                    <p class="item__stock">В наличии</p>
-                                </div>
-                            </div>
-                        </div>
                         <div class="cards__item violet-button">
                             <div class="item__top">
                                 <div class="item__image" href="card.html">
@@ -368,32 +400,68 @@
                                     <p class="item__stock">В наличии</p>
                                 </div>
                             </div>
-                        </div>  
+                        </div> 
+                        <div class="cards__item violet-button">
+                            <div class="item__top">
+                                <div class="item__image" href="card.html">
+                                    <a href="card.html">
+                                        <img src="img/example.jpeg" class="item__image-pic"/>
+                                    </a>
+                                </div>
+                                <a class="item__title" href="card.html">Корзина-сумка</a>
+                            </div>
+                            <div class="item__bottom">
+                                <div class="card__rating-mini">
+                                    <div class="rating__star-mini">
+                                        <span class="star__icon star__active">★</span>	
+                                        <span class="star__icon star__active">★</span>    
+                                        <span class="star__icon star__active">★</span>  
+                                        <span class="star__icon star__active">★</span>    
+                                        <span class="star__icon star__active">★</span>
+                                    </div>
+                                    <p class="rating__number-mini">5</p>
+                                </div>
+                                <div class="item__text">
+                                    <p class="item__price">5100 ₽</p>
+                                    <p class="item__stock">В наличии</p>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="cards__item violet-button">
+                            <div class="item__top">
+                                <div class="item__image" href="card.html">
+                                    <a href="card.html">
+                                        <img src="img/example.jpeg" class="item__image-pic"/>
+                                    </a>
+                                </div>
+                                <a class="item__title" href="card.html">Корзина-сумка</a>
+                            </div>
+                            <div class="item__bottom">
+                                <div class="card__rating-mini">
+                                    <div class="rating__star-mini">
+                                        <span class="star__icon star__active">★</span>	
+                                        <span class="star__icon star__active">★</span>    
+                                        <span class="star__icon star__active">★</span>  
+                                        <span class="star__icon star__active">★</span>    
+                                        <span class="star__icon star__active">★</span>
+                                    </div>
+                                    <p class="rating__number-mini">5</p>
+                                </div>
+                                <div class="item__text">
+                                    <p class="item__price">5100 ₽</p>
+                                    <p class="item__stock">В наличии</p>
+                                </div>
+                            </div>
+                        </div> 
                     </div>
                     <a class="catalog__button violet-button" href="catalog.html">Смотреть другие товары</a>
-                </div>
-            </section>
-            <section class="slider">
-                <h2 class="slider__title">Новости и акции</h2>
-                <div class="slider__items">
-                    <img src="img/slides/1.png" alt="слайд 1" class="slider__item"/>
-                    <img src="img/slides/2.png" alt="слайд 2" class="slider__item"/>
-                    <button class="slider__button-prv">
-                        <svg class="svg__icon svg__slider-prv">
-                            <use xlink:href="img/svgs/slider__buttons.svg#prev"></use>
-                        </svg>
-                    </button>
-                    <button class="slider__button-nxt">
-                        <svg class="svg__icon svg__slider-nxt">
-                            <use xlink:href="img/svgs/slider__buttons.svg#next"></use>
-                        </svg>
-                    </button>
                 </div>
             </section>
         </div>
         <div class="footer__gradient"></div>
     </main>
     <footer class="footer">
+        <div class="footer__gradient"></div>
         <div class="container footer__container">
             <div class="footer__top">
                 <div class="footer__contacts">
@@ -448,6 +516,5 @@
         </div>
     </footer>
     <script src="js/registration.js"></script>
-    <script src="js/slider.js"></script>
 </body>
 </html>
