@@ -31,10 +31,15 @@
 .product__items {
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
 
 .product__image {
     margin-bottom: 1.4vw;
+    width: 50%;
 }
 
 .product__image-pic {
@@ -137,10 +142,11 @@
     transition: 0.2s;
     background: #F2EDE7;
     padding: 0.9vw 2.4vw;
-    font-size: 3vw;
+    font-size: 2vw;
 }
 
 .product__rating {
+    width: 100%;
     display: flex;
     gap: 3vw;
     background-color: #F2EDE7;
@@ -171,6 +177,12 @@
 }
 
 @media screen and (max-width: 425px) {    
+
+    .product__image {
+        margin-bottom: 2vw;
+        width: 100%;
+    }
+
     .product__title, .product__describtion-title, .product__size-title {
         padding-bottom: 0.7vw;
     }
