@@ -4,6 +4,11 @@
     padding-bottom: 1vw;
 }
 
+.profile__data-title {
+    padding-top: 1vw;
+    padding-bottom: 0.5vw;
+}
+
 .profile__option {
     width: 50%;
 }
@@ -36,6 +41,7 @@
 @media screen and (max-width: 425px) {
     .profile__data-title {
         padding-top: 2vw;
+        padding-bottom: 2vw;
     }
     
     .profile__summary {
